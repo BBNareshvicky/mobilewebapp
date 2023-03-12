@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .first_pg {
+            width: 100vw;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url(assets/images/123.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .first_logo {
+            position: relative;
+            top: 3rem;
+        }
+
+        .first_logo img {
+            border-radius: 9rem;
+            width: 6.5rem;
+            height: 6.8rem;
+        }
+
+        .title h1 {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .title p {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            padding-top: 2.5rem;
+        }
+
+        .button button {
+            background-color: rgba(217, 217, 217, 1);
+            padding: 12px 30px;
+            color: rgb(3, 3, 3);
+            border-radius: 10px;
+            font-size: 0.8rem;
+            cursor: pointer;
+
+        }
+
+        .first_txt {
+            text-align: center;
+            padding-top: 1rem;
+        }
+
+        .sign {
+            display: flex;
+            justify-content: center;
+            padding-top: 1.5rem;
+        }
+
+        .sign button {
+
+            background-color: rgba(0, 97, 242, 1);
+            padding: 12px 30px;
+            border: none;
+            color: rgb(250, 246, 246);
+            border-radius: 10px;
+            font-size: 0.8rem;
+            cursor: pointer;
+
+        }
+
+
+
+        @media screen and (max-width:600px) {
+            .first_pg {
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .first_logo {
+                position: relative;
+                top: -10rem;
+            }
+
+            .first_logo img {
+                border-radius: 9rem;
+                width: 11.5rem;
+                height: 11.8rem;
+            }
+
+            .title h1 {
+                margin-top: -8rem;
+                text-align: center;
+                font-size: 5rem;
+            }
+
+            .title p {
+                margin-top: 1rem;
+                text-align: center;
+                font-size: 3rem;
+                margin-bottom: 3rem;
+            }
+
+            .button button {
+                width: 24rem;
+                height: 5rem;
+                background-color: rgba(217, 217, 217, 1);
+                border: none;
+                color: rgb(3, 3, 3);
+                border-radius: 15px;
+                font-size: 1.5rem;
+                cursor: pointer;
+                filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.5));
+            }
+
+            .first_txt {
+                text-align: center;
+                padding-top: 3rem;
+                font-size: 1.6rem;
+            }
+
+            .sign {
+                display: flex;
+                justify-content: center;
+                padding-top: 2rem;
+            }
+
+            .sign button {
+                width: 16rem;
+                height: 4rem;
+                background-color: rgba(0, 97, 242, 1);
+                border: none;
+                color: rgb(250, 246, 246);
+                border-radius: 15px;
+                font-size: 1.5rem;
+                cursor: pointer;
+                box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .login {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(assets/images/123.jfif);
+        }
+
+        .login_logo {
+            position: relative;
+            top: 3rem;
+        }
+
+        .login_logo img {
+            border-radius: 9rem;
+            width: 6.5rem;
+            height: 6.8rem;
+        }
+
+        .login_title h2 {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .login_bg {
+            width: 20rem;
+            height: 10rem;
+            background-color: rgba(255, 255, 255, 0.58);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 2rem;
+
+        }
+
+        .login_input {
+            padding-top: 1.1rem;
+        }
+
+        @media screen and (max-width:600px) {
+            .login {
+                width: 100vw;
+                height: 100vh;
+
+            }
+
+            .login_dec {
+                display: none;
+            }
+
+            .login_logo {
+                position: relative;
+                top: -10rem;
+            }
+
+            .login_logo img {
+                border-radius: 9rem;
+                width: 11.5rem;
+                height: 11.8rem;
+            }
+
+            .login_title h2 {
+                margin-top: -8rem;
+                text-align: center;
+                font-size: 3rem;
+            }
+
+            .login_btn button {
+                width: 10rem;
+                height: 4rem;
+                background-color: rgba(196, 228, 239, 1);
+                border: none;
+                color: black;
+                border-radius: 15px;
+                font-size: 1.5rem;
+                font-weight: 700;
+                cursor: pointer;
+                filter: drop-shadow(0px 4px 9px rgba(0, 97, 242, 0.63));
+                margin-left: 1.3rem;
+            }
+
+            .login_bg {
+                width: 27rem;
+                height: 33rem;
+                background-color: rgba(255, 255, 255, 0.58);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 2rem;
+                box-shadow: 0px 12px 109px rgba(0, 97, 242, 0.56);
+            }
+
+
+            .email,
+            .pass {
+                padding-top: 1rem;
+                padding-bottom: 1.5rem;
+                font-size: 2rem;
+            }
+
+            #email,
+            #pass {
+                margin-bottom: 1.4rem;
+                width: 20rem;
+                height: 3rem;
+                font-size: 1.2rem;
+                border-color: rgb(90, 123, 240);
+
+            }
+
+            .login_txt {
+                font-weight: 500;
+                padding-top: 1rem;
+                font-size: 1.6rem;
+            }
+
+            .span {
+                color: rgba(0, 56, 255, 1);
+            }
+
+            .login_btn {
+                margin-top: 2rem;
+                margin-left: 4.3rem;
+            }
+        }
+
+        .session {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(assets/images/123.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .session_cont li {
+            list-style-type: none;
+        }
+
+        .img1,
+        .img2,
+        .img3,
+        .img4,
+        .img5,
+        .img6,
+        .img7 {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 2rem;
+            background: linear-gradient(#00c6ff, #0072ff);
+        }
+
+        @media screen and (max-width:600px) {
+            .session {
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .session_dec {
+                display: none;
+            }
+
+            .session_tl {
+                margin-top: 3rem;
+                text-align: center;
+                font-size: 3rem;
+            }
+
+            .session_cont h2 {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .img1,
+            .img2,
+            .img3 {
+                width: 5rem;
+                height: 5rem;
+                border-radius: 2rem;
+                background: linear-gradient(#00c6ff, #0072ff);
+            }
+
+            .txt1 {
+                font-size: 2rem;
+
+                margin-left: 2rem;
+            }
+
+            .session_cont {
+                margin-top: 2rem;
+                margin-left: 3rem;
+                margin-bottom: 2rem;
+            }
+
+            .session_cont ul {
+                margin-left: -5rem;
+            }
+
+            .session_btn button {
+                width: 7rem;
+                height: 3.5rem;
+                background-color: rgba(196, 228, 239, 1);
+                border: none;
+                color: black;
+                border-radius: 15px;
+                font-size: 1.5rem;
+                font-weight: 700;
+                cursor: pointer;
+                filter: drop-shadow(0px 4px 9px rgba(0, 97, 242, 0.63));
+                margin-left: 8rem;
+                margin-top: -3rem;
+            }
+
+            .session_bg {
+                width: 27rem;
+                height: 33rem;
+                background-color: rgba(255, 255, 255, 0.58);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 2rem;
+                margin-top: 2rem;
+                box-shadow: 0px 12px 109px rgba(0, 97, 242, 0.56);
+            }
+
+            .session_bg1 {
+                width: 25rem;
+                height: 16rem;
+                background-color: rgba(255, 255, 255, 0.58);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 2rem;
+                margin-top: 2rem;
+                box-shadow: 0px 12px 109px rgba(0, 97, 242, 0.56);
+            }
+
+            .session_btn1 button {
+                width: 7rem;
+                height: 3.5rem;
+                background-color: rgba(196, 228, 239, 1);
+                border: none;
+                color: black;
+                border-radius: 15px;
+                font-size: 1.5rem;
+                font-weight: 700;
+                cursor: pointer;
+                filter: drop-shadow(0px 4px 9px rgba(0, 97, 242, 0.63));
+            }
+
+            #datetime {
+                margin-bottom: 1.8rem;
+                width: 20rem;
+                height: 3rem;
+                font-size: 1.5rem;
+                border-color: rgb(90, 123, 240);
+                border-radius: 1rem;
+
+            }
+
+            .session_cont1 h2 {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+
+        }
+
+        .add {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(assets/images/123.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .add_cont li {
+            list-style-type: none;
+        }
+
+        @media screen and (max-width:600px) {
+            .add {
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .add_dec {
+                display: none;
+            }
+
+            .add_tl {
+                margin-top: 3rem;
+                text-align: center;
+                font-size: 3rem;
+            }
+
+
+
+            .img1,
+            .img2,
+            .img3,
+            .img4,
+            .img5,
+            .img6,
+            .img7 {
+                width: 4.5rem;
+                height: 4.5rem;
+                border-radius: 2rem;
+                background: linear-gradient(#00c6ff, #0072ff);
+            }
+
+            .txt1 {
+                font-size: 1.6rem;
+                position: relative;
+                top: -2rem;
+                margin-left: 2rem;
+            }
+
+            .add_cont {
+                margin-top: 2rem;
+                margin-left: -6rem;
+                margin-bottom: 2rem;
+            }
+
+            .add_cont ul li {
+                padding-top: 0.5rem;
+            }
+
+
+            .add_btn button {
+                width: 13rem;
+                height: 4rem;
+                background-color: rgba(196, 228, 239, 1);
+                border: none;
+                color: black;
+                border-radius: 15px;
+                font-size: 1.5rem;
+                font-weight: 700;
+                cursor: pointer;
+                filter: drop-shadow(0px 4px 9px rgba(0, 97, 242, 0.63));
+            }
+
+            .add_cont li button {
+                width: 4rem;
+                height: 3rem;
+                background-color: rgba(196, 228, 239, 1);
+                border: none;
+                color: black;
+                border-radius: 15px;
+                font-size: 1.2rem;
+                font-weight: 700;
+                cursor: pointer;
+                filter: drop-shadow(0px 4px 9px rgba(0, 97, 242, 0.63));
+                margin-right: 1rem;
+
+            }
+
+            .ad-btn {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                position: absolute;
+                right: 5rem;
+                margin-top: -4.4rem;
+
+            }
+
+            .add_bg {
+                width: 29rem;
+                height: 55rem;
+                background-color: rgba(255, 255, 255, 0.58);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 2rem;
+                margin-top: 2rem;
+                box-shadow: 0px 12px 109px rgba(0, 97, 242, 0.56);
+            }
+
+            .add_btn1 button {
+                width: 10rem;
+                height: 4rem;
+                background-color: rgba(196, 228, 239, 1);
+                border: none;
+                color: black;
+                border-radius: 15px;
+                font-size: 1.5rem;
+                font-weight: 700;
+                cursor: pointer;
+                filter: drop-shadow(0px 4px 9px rgba(0, 97, 242, 0.63));
+                margin-top: 1.5rem;
+            }
+
+            .time {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                position: absolute;
+                right: 8rem;
+                margin-top: -3.6rem;
+                visibility: hidden;
+
+            }
+
+
+
+
+
+        }
+
+        .profile_dec {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(assets/images/123.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .profile {
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+
+
+
+        }
+
+        @media screen and (max-width:600px) {
+            .profile {
+                width: 29rem;
+                height: 10rem;
+                background-color: rgba(255, 255, 255, 0.58);
+                background-position: center;
+                border-radius: 2rem;
+                box-shadow: 0px 12px 109px rgba(0, 97, 242, 0.56);
+                margin-top: 3rem;
+                margin-left: 2rem;
+           
+            }
+
+
+            .profile_dec {
+                display: none;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .pfl_hd {
+                padding-top: 3rem;
+                text-align: center;
+                font-size: 3rem;
+            }
+
+            .pfl_tl h2 {
+                margin-top: 2rem;
+                margin-left: 2rem;
+            }
+
+            .pfl_img {
+                width: 7rem;
+                height: 7rem;
+                margin-left: 1rem;
+                margin-top: 1rem;
+
+            }
+
+        }
+
+        .web {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: -2rem;
+        }
+
+        .webtn {
+            width: 7rem;
+            height: 3.5rem;
+            background-color: rgba(196, 228, 239, 1);
+            border: none;
+            color: black;
+            border-radius: 15px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            filter: drop-shadow(0px 4px 9px rgba(0, 97, 242, 0.63));
+            margin-top: 5rem;
+
+        }
+
+        .webtn1 {
+            width: 7rem;
+            height: 3.5rem;
+            background-color: rgba(196, 228, 239, 1);
+            border: none;
+            color: black;
+            border-radius: 15px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            filter: drop-shadow(0px 4px 9px rgba(0, 97, 242, 0.63));
+            margin-top: 1.5rem;
+
+        }
+
+        li {
+            list-style-type: none;
+        }
+        .senddec
+        {
+            display: none;
+        }
+
+        .send {
+         
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0px;
+            background-color: #71d7f380;
+            
+        filter: blur(10px 10px 10px rgba(76, 190, 247, 0.866));
+            top: 0px;
+        }
+        .send_bg
+        {
+            width: 29rem;
+                height: fit-content;
+                padding-bottom: 50px;
+                background-color: rgba(255, 255, 255, 0.886);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 2rem;
+                margin-top: 2rem;
+                box-shadow: 0px 12px 109px rgba(0, 97, 242, 0.56);
+        }
+        .send_bg img
+        {
+            width: 5rem;
+            height: 5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="training">
+        <div class="first_pg">
+            <div class="first_logo">
+                <img src="assets/images/images.jfif" alt="logo">
+            </div>
+            <div class="title">
+                <h1>Stay Fit</h1>
+                <p>Welcome</p>
+            </div>
+            <div class="button">
+                <button onclick="log()">Login to Your Account</button>
+            </div>
+            <div class="first_txt">
+                <p>If you don't have an account?</p>
+            </div>
+            <div class="sign">
+                <button>Sign up here</button>
+            </div>
+        </div>
+    </div>
+    <div class="login_dec">
+        <div class="login">
+            <div class="login_logo">
+                <img src="assets/images/images.jfif" alt="logo">
+            </div>
+            <div class="login_title">
+                <h2>Sign in</h2>
+            </div>
+            <div class="login_bg">
+                <div class="login_input">
+                    <h3 class="email">Email</h3>
+                    <input type="text" name="mail" id="email" placeholder="Enter your email">
+                    <h3 class="pass">password</h3>
+                    <input type="password" name="pass" id="pass" placeholder="Enter your password">
+                    <div class="login_txt">
+                        <p>Forgot password?<span class="span">Sign up here</span></p>
+                    </div>
+                    <div class="login_btn">
+                        <button onclick="sign()">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="session_dec">
+        <div class="session">
+            <h1 class="session_tl">Training Session</h1>
+            <div class="session_place">
+                <div class="session_bg">
+                    <div class="session_cont">
+                        <h2>Exercise</h2>
+                        <ul class="toadd">
+                            <li class="hide">
+                                <span class="dash">
+                                    <img src="assets/images/squat.png" alt="Squat image" class="img1"><span
+                                    class="txt1">Squat
+                                </span>
+                            </span>
+                            </li>
+                            <li class="hide1">
+                                <span>
+                                    <img src="assets/images/plank.png" alt="Plank image" class="img2"></span><span
+                                    class="txt1">Plank</span>
+                            </li>
+                            <li class="hide2">
+                                <span>
+                                    <img src="assets/images/workout.png" alt="pushups image" class="img3"></span><span
+                                    class="txt1">pushups</span>
+                            </li>
+                            <li class="hide3">
+                                <span>
+                                    <img src="assets/images/lunges.png" alt="lunges image" class="img4">
+                                    <span class="txt1">Lunges</span>
+                                </span>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="session_btn">
+                        <button onclick="edt()">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="session_bg1">
+                <div class="session_cont1">
+                    <h2>Session Time</h2>
+                    <div class="inp">
+                        <input type="datetime-local" id="datetime" readonly="readonly">
+                    </div>
+                </div>
+                <div class="session_btn1">
+                    <button onclick="time()" class="ed">Edit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="add_dec">
+        <div class="add">
+            <h2 class="add_tl"> Add Exercise</h2>
+            <div class="add_bg">
+                <div class="add_cont">
+
+                    <ul>
+                        <li>
+                            <span class="ex1">
+                                <img src="assets/images/squat.png" alt="Squat image" class="img1"><span
+                                    class="txt1">Squat
+                                </span> </span>
+                            <span class="ad-btn"><button onclick="sqt()" id="btn1">Add</button><img
+                                    src="assets/images/remove.png" id="img1" width="30rem" height="30rem"></span>
+                        </li>
+                        <li>
+                            <span class="ex2">
+                                <img src="assets/images/plank.png" alt="Plank image" class="img2"><span
+                                    class="txt1">Plank</span></span>
+                            <span class="ad-btn"><button onclick="plk()" id="btn2">Add</button><img
+                                    src="assets/images/remove.png" id="img2" width="30rem" height="30rem"></span>
+                        </li>
+                        <li>
+                            <span class="ex3">
+                                <img src="assets/images/workout.png" alt="pushups image" class="img3"><span
+                                    class="txt1">pushups</span></span>
+                            <span class="ad-btn"><button onclick="pups()" id="btn3">Add</button><img
+                                    src="assets/images/remove.png" id="img3" width="30rem" height="30rem"></span>
+                        </li>
+                        <li>
+                            <span class="ex4">
+                                <img src="assets/images/lunges.png" alt="lunges image" class="img4">
+                                <span class="txt1">Lunges</span>
+                            </span>
+                            <span class="ad-btn"><button onclick="lug()" id="btn4">Add</button><img
+                                    src="assets/images/remove.png" id="img4" width="30rem" height="30rem"></span>
+                        </li>
+                        <li>
+                            <span class="ex5">
+                                <img src="assets/images/sit-up.png" alt="sit-up image" class="img5"><span
+                                    class="txt1">Sit-up</span></span>
+                            <span class="ad-btn"><button onclick="sup()" id="btn5">Add</button><img
+                                    src="assets/images/remove.png" id="img5" width="30rem" height="30rem"></span>
+                        </li>
+                        <li>
+                            <span class="ex6">
+                                <img src="assets/images/exercises.png" alt="butterfly sit-up image" class="img6"><span
+                                    class="txt1">Butterfly Sit-up</span></span>
+                            <span class="ad-btn"><button onclick="bsup()" id="btn6">Add</button><img
+                                    src="assets/images/remove.png" id="img6" width="30rem" height="30rem"></span>
+                        </li>
+                        <li>
+                            <span class="ex7">
+                                <img src="assets/images/exercise.png" alt="forward lunge image" class="img7"><span
+                                    class="txt1">Forward Lunge</span></span>
+                            <span class="ad-btn"><button onclick="flug()" id="btn7">Add</button><img
+                                    src="assets/images/remove.png" id="img7" width="30rem" height="30rem"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="add_btn">
+                    <button>Add Selected</button>
+                </div>
+                <div class="add_btn1">
+                    <button onclick="can()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile_dec">
+        <h2 class="pfl_hd">Customer Profile</h2>
+        <div class="profile">
+
+            <div class="pfl_img">
+                <img src="assets/images/man.png" width="100%" alt="">
+            </div>
+            <div class="pfl_tl">
+                <h2>Hi,<br>Mr.John</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="senddec">
+    <div class="send">
+        <div class="send_bg">
+            <img src="assets/images/accept.png" alt="">
+            <h2>John's Schedule Send Successful</h2>
+            
+        </div>
+    </div>
+</div>
+    <script>
+        let title = document.querySelector(".training");
+        let login = document.querySelector(".login_dec");
+        let session = document.querySelector(".session_dec");
+        let emailinp = document.getElementById("email");
+        let passinp = document.getElementById("pass")
+        function log() {
+            title.style.display = "none";
+            login.style.display = "block";
+        }
+        if (emailinp.value == "welcome") {
+            emailinp.style.bordercolor = "green";
+        }
+        else if (passinp.value == "welcome") {
+            passinp.style.bordercolor = "green";
+        }
+        function sign() {
+            if (emailinp.value == "welcome" && passinp.value == "welcome") {
+                login.style.display = "none";
+                session.style.display = "block";
+            }
+            else {
+                alert("Wrong email or password")
+            }
+        }
+        let add = document.querySelector(".add_dec");
+        function edt() {
+            session.style.display = "none";
+            add.style.display = "block";
+        }
+        function can() {
+            session.style.display = "block";
+            add.style.display = "none";
+        }
+
+        let dt = document.querySelector("#datetime");
+        let dtdiv = document.querySelector(".session_btn1")
+        let dted = document.querySelector(".ed");
+
+        function time() {
+            dt.removeAttribute("readonly");
+
+            dtbtn = document.createElement("button");
+            dtdiv.appendChild(dtbtn);
+            dtbtn.innerHTML = "Save";
+            dted.style.display = "none";
+            dtbtn.addEventListener("click", () => {
+                dt.setAttribute("readonly", "readonly");
+                dtbtn.style.display = "none";
+
+                dted.style.display = "block";
+                session.style.display="none";
+                pfldec.style.display="block";
+                let inpv = document.querySelector(".inp");
+                let inp = document.createElement("div");
+
+                adbg1.appendChild(inp);
+                inp.innerHTML = dt.value;
+
+            })
+        }
+
+
+        let pfldec = document.querySelector(".profile_dec");
+        let add1 = document.querySelector(".ex1");
+        let add2 = document.querySelector(".ex2");
+        let add3 = document.querySelector(".ex3");
+        let add4 = document.querySelector(".ex4");
+        let add5 = document.querySelector(".ex5");
+        let add6 = document.querySelector(".ex6");
+        let add7 = document.querySelector(".ex7");
+        addiv = document.createElement("div");
+        pfldec.appendChild(addiv);
+        addiv.classList.add("web")
+
+        adbg = document.createElement("bg");
+        addiv.appendChild(adbg);
+        adbg.classList.add("add_bg");
+        adbg.style.width = "25rem";
+        adbg.style.height = "fit-content";
+        adh2 = document.createElement("h2");
+        adbg.appendChild(adh2);
+        adh2.innerHTML = "Exercise";
+        adul = document.createElement("ul");
+        adbg.appendChild(adul);
+
+
+        let cbtn1 = document.querySelector("#btn1");
+        let r1 = document.querySelector("#img1")
+        r1.style.display = "none";
+        function sqt() {
+            adli = document.createElement("li");
+            adli.classList.add("li");
+            adul.appendChild(adli);
+            adli.innerHTML = add1.innerHTML + '30sec';
+            cbtn1.style.backgroundColor = "green";
+            r1.style.display = "block";
+            r1.addEventListener("click", () => {
+                adli.style.display = "none";
+                r1.style.display = "none";
+                cbtn1.style.backgroundColor = "rgba(196, 228, 239, 1)";
+            })
+
+        }
+
+
+        let cbtn2 = document.querySelector("#btn2");
+        let r2 = document.querySelector("#img2");
+        r2.style.display = "none";
+        function plk() {
+            adli1 = document.createElement("li");
+            adli1.classList.add("li");
+            adul.appendChild(adli1);
+            adli1.innerHTML = add2.innerHTML + '30sec';
+            cbtn2.style.backgroundColor = "green";
+            r2.style.display = "block";
+
+            r2.addEventListener("click", () => {
+                adli1.style.display = "none";
+                r2.style.display = "none";
+                cbtn2.style.backgroundColor = "rgba(196, 228, 239, 1)";
+            })
+        }
+
+
+        let cbtn3 = document.querySelector("#btn3");
+        let r3 = document.querySelector("#img3");
+        r3.style.display = "none";
+        function pups() {
+            adli2 = document.createElement("li");
+            adul.appendChild(adli2);
+            adli2.classList.add("li");
+            adli2.innerHTML = add3.innerHTML + '30sec';
+            cbtn3.style.backgroundColor = "green";
+            r3.style.display = "block";
+
+            r3.addEventListener("click", () => {
+                adli2.style.display = "none";
+                r3.style.display = "none";
+                cbtn3.style.backgroundColor = "rgba(196, 228, 239, 1)";
+            })
+        }
+
+
+        let cbtn4 = document.querySelector("#btn4");
+        let r4 = document.querySelector("#img4");
+        r4.style.display = "none";
+        function lug() {
+            adli3 = document.createElement("li");
+            adul.appendChild(adli3);
+            adli3.classList.add("li");
+            adli3.innerHTML = add4.innerHTML + '30sec';
+            cbtn4.style.backgroundColor = "green";
+            r4.style.display = "block";
+
+            r4.addEventListener("click", () => {
+                adli3.style.display = "none";
+                r4.style.display = "none";
+                cbtn4.style.backgroundColor = "rgba(196, 228, 239, 1)";
+            })
+
+        }
+
+
+        let cbtn5 = document.querySelector("#btn5");
+        let r5 = document.querySelector("#img5");
+        r5.style.display = "none";
+        function sup() {
+            adli4 = document.createElement("li");
+
+            adul.appendChild(adli4);
+            adli4.classList.add("li");
+            adli4.innerHTML = add5.innerHTML + '30sec';
+            cbtn5.style.backgroundColor = "green";
+            r5.style.display = "block";
+            r5.addEventListener("click", () => {
+                adli4.style.display = "none";
+                r5.style.display = "none";
+                cbtn5.style.backgroundColor = "rgba(196, 228, 239, 1)";
+            })
+
+        }
+
+
+        let cbtn6 = document.querySelector("#btn6");
+        let r6 = document.querySelector("#img6");
+        r6.style.display = "none";
+        function bsup() {
+            adli5 = document.createElement("li");
+            adul.appendChild(adli5);
+            adli5.classList.add("li");
+            adli5.innerHTML = add6.innerHTML + '30sec';
+            cbtn6.style.backgroundColor = "green";
+            r6.style.display = "block";
+            r6.addEventListener("click", () => {
+                adli5.style.display = "none";
+                r6.style.display = "none";
+                cbtn6.style.backgroundColor = "rgba(196, 228, 239, 1)";
+            })
+
+        }
+
+
+        let cbtn7 = document.querySelector("#btn7");
+        let r7 = document.querySelector("#img7");
+        r7.style.display = "none";
+        function flug() {
+            adli6 = document.createElement("li");
+            adul.appendChild(adli6);
+            adli6.classList.add("li");
+            adli6.innerHTML = add7.innerHTML + '30sec';
+            cbtn7.style.backgroundColor = "green";
+            r7.style.display = "block";
+            r7.addEventListener("click", () => {
+                adli6.style.display = "none";
+                r7.style.display = "none";
+                r7.style.display = "none";
+                cbtn7.style.backgroundColor = "rgba(196, 228, 239, 1)";
+            })
+
+        }
+        let adbtn = document.querySelector(".add_btn");
+        adbtn.addEventListener("click", () => {
+            add.style.display = "none";
+            pfldec.style.display = "block";
+        })
+
+
+        let adbg1 = document.createElement("bg1");
+        addiv.appendChild(adbg1);
+        adbg1.classList.add("add_bg");
+        adbg1.style.width = "25rem";
+        adbg1.style.height = "fit-content";
+        ad1h2 = document.createElement("h2");
+        adbg1.appendChild(ad1h2);
+        ad1h2.innerHTML = "Workout Time";
+
+
+        let pflbtn = document.createElement("button");
+        let pflbtn1 = document.createElement("button");
+        addiv.appendChild(pflbtn);
+        addiv.appendChild(pflbtn1);
+        pflbtn1.innerHTML = "Back";
+        pflbtn.classList.add("webtn");
+        pflbtn1.classList.add("webtn1");
+        pflbtn1.addEventListener("click", () => {
+            pfldec.style.display = "none";
+            session.style.display = "block";
+        })
+        pflbtn.innerHTML = "Send";
+        pflbtn.addEventListener("click", (load) => {
+            let send=document.querySelector(".senddec");
+            send.style.display="block";
+            pflbtn.style.display="none";
+          if(load){
+            setTimeout(()=>{
+            send.style.display="none";
+
+            },1000)
+          }
+        })
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
